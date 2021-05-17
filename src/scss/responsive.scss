@@ -1,0 +1,176 @@
+@media only screen and (max-width: 1767px) and (min-width: 1650px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 52.1% !important;
+    }
+}
+
+@media only screen and (max-width: 1850px) and (min-width: 1768px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 52% !important;
+    }
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 1849px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 51.8% !important;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 51.2% !important;
+    }
+}
+
+@media only screen and (max-width: 1198px) and (min-width: 1025px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 61.4% !important;
+    }
+}
+
+@media only screen and (max-width: 1075px) and (min-width: 515px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 67.4% !important;
+    }
+}
+
+@media only screen and (max-width: 1439px) and (min-width: 1326px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 52.7% !important;
+    }
+}
+
+@media only screen and (max-width: 1259px) and (min-width: 1199px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 53% !important;
+    }
+}
+/*@media only screen and (max-width: 1174px) and (min-width: 667px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 53% !important;
+    }
+}*/
+@media only screen and (max-width: 1450px) and (min-width: 1260px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 52.6% !important;
+    }
+}
+@media only screen and (max-width: 1259px) and (min-width: 1199px){
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 53% !important;
+    }
+}
+@media only screen and (max-width: 1350px) and (min-width: 1250px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 53% !important;
+    }
+}
+@media only screen and (max-width: 1198px) and (min-width: 1025px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 53% !important;
+    }
+}
+@media only screen and (max-width: 1327px) and (min-width: 675px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 52.9% !important;
+    }
+}
+@media only screen and (max-width: 1152px) and (min-width: 667px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 60% !important;
+    }
+}
+@media only screen and (max-width: 1198px) and (min-width: 1025px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 53.2% !important;
+    }
+}
+@media only screen and (max-width: 1850px) and (min-width: 1768px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 52% !important;
+    }
+}
+@media only screen and (max-width: 1075px) and (min-width: 515px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 60% !important;
+    }
+}
+@media only screen and (max-width: 881px) and (min-width: 374px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 62% !important;
+    }
+}
+@media only screen and (max-width: 1152px) and (min-width: 667px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 62% !important;
+    }
+}
+@media only screen and (max-width: 1161px) and (min-width: 667px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        left: 62% !important;
+    }
+}
+
+// 4k-display...
+@media only screen and (min-width: 2000px) {
+   .global-tbl-height .react-bootstrap-table {
+      height: 52rem !important;
+      line-height: 4;
+      font-size: 13px;
+    } 
+    .milestone-tree-view{
+        height: 42rem !important;
+    }  
+       
+    .chrono .react-bootstrap-table {
+        height: 40rem !important;
+        line-height: 4;           
+    }        
+      
+    .tbl-height .react-bootstrap-table {
+         height: 50em !important;
+    }
+} 
+
+//laptop L-1440 px
+@media only screen and (min-width: 1030px)  and (max-width: 1440px) {
+    .global-tbl-height .react-bootstrap-table {
+         height: 24.7rem !important;
+    }         
+    .milestone-tree-view{
+        height: 14.5rem !important;
+    }            
+    .chrono .react-bootstrap-table {
+        height: 12.5rem !important;
+    }
+}  
+  
+// Laptop- 1024px
+@media only screen and (min-width: 800px)  and (max-width: 1366px) {
+   .global-tbl-height .react-bootstrap-table {
+        height: 21.5rem !important;
+    }
+    .milestone-tree-view{
+        height: 11.2rem !important;
+    }         
+    .chrono .react-bootstrap-table {           
+        height: 9.5rem !important;
+    } 
+}  
+
+//768px
+.global-tbl-height .react-bootstrap-table {
+  @media only screen and (max-width: 790px)   {
+         height: 80rem !important;
+         line-height: 5 !important;
+     }
+    }
+     /*
+     .milestone-tree-view{
+         height: 21rem !important;
+     }         
+     .chrono .react-bootstrap-table {           
+         height: 19rem !important;
+     } 
+ } */ 
+ 

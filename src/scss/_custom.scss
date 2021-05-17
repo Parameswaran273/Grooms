@@ -1,0 +1,642 @@
+html ::-webkit-scrollbar, body.app ::-webkit-scrollbar {
+    width: .4rem;
+    height: .4rem;
+}
+
+html ::-webkit-scrollbar-thumb, body.app ::-webkit-scrollbar-thumb {
+    background: #03d2ec;
+    border-radius: 5px;
+}
+
+html ::-webkit-scrollbar-track, body.app ::-webkit-scrollbar-track {
+    background: #212529;
+    border: .22rem solid rgba(0, 0, 0, 0.11);
+    background-clip: content-box;
+    border-radius: 5px;
+}
+
+:root, .react-bootstrap-table {
+    scrollbar-face-color: rgba(0, 0, 0, 0.15);
+    scrollbar-track-color: rgba(0, 0, 0, 0.15);
+    scrollbar-color: rgb(133, 206, 54) rgba(0, 0, 0, 0.15) !important;
+    scrollbar-width: thin !important;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #000;
+    //background-image: url("./img/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    backface-visibility: hidden;
+}
+
+#preloader > div {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #ef5121;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    backface-visibility: hidden;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+#preloader > div:after, #preloader > div:before {
+    content: "";
+    position: absolute;
+}
+
+#preloader > div:before {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #7cba01;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+#preloader > div:after {
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #00a6f0;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+.freeze-column {
+    .global-tbl-height .react-bootstrap-table table > tbody > tr > td:nth-child(1),
+    .global-tbl-height .react-bootstrap-table table > thead > tr > th:nth-child(1),
+    .global-tbl-height .react-bootstrap-table tbody th:nth-child(1) {
+        left: 0;
+        color: #fff;
+        position: sticky;
+        border-bottom: 0px solid #00152d !important;
+        background-color: #272727eb !important;
+    }
+
+    .global-tbl-height .react-bootstrap-table table > tbody > tr > td:nth-child(2),
+    .global-tbl-height .react-bootstrap-table table > thead > tr > th:nth-child(2),
+    .global-tbl-height .react-bootstrap-table tbody th:nth-child(2) {
+        left: 5.35em;
+        color: #fff;
+        position: sticky;
+        border-bottom: 0px solid #00152d !important;
+        background-color: #272727eb !important;
+    }
+}
+
+.freeze-column-milestone-Tbl {
+    .freeze-milestone-tbl .react-bootstrap-table table > tbody > tr > td:nth-child(1),
+    .freeze-milestone-tbl .react-bootstrap-table table > thead > tr > th:nth-child(1),
+    .freeze-milestone-tbl .react-bootstrap-table .table.table.table-bordered tbody th:nth-child(1) {
+        left: 0;
+        color: #fff;
+        position: sticky;
+        border-bottom: 0px solid #00152d !important;
+        background-color: #272727eb !important;
+    }
+
+    .freeze-milestone-tbl .react-bootstrap-table table > tbody > tr > td:nth-child(2),
+    .freeze-milestone-tbl .react-bootstrap-table table > thead > tr > th:nth-child(2),
+    .freeze-milestone-tbl .react-bootstrap-table .table.table.table-bordered tbody th:nth-child(2) {
+        left: 14.95em;
+        color: #fff;
+        position: sticky;
+        border-bottom: 0px solid #00152d !important;
+        background-color: #272727eb !important;
+    }
+
+    .freeze-milestone-tbl .react-bootstrap-table table > tbody > tr > td:nth-child(3),
+    .freeze-milestone-tbl .react-bootstrap-table table > thead > tr > th:nth-child(3),
+    .freeze-milestone-tbl .react-bootstrap-table .table.table.table-bordered tbody th:nth-child(3) {
+        left: 24.55em;
+        color: #fff;
+        position: sticky;
+        border-bottom: 0px solid #00152d !important;
+        background-color: #272727eb !important;
+    }
+}
+
+.global-tbl-height .react-bootstrap-table table > thead > tr > th:nth-child(1),
+.global-tbl-height .react-bootstrap-table tbody th:nth-child(1),
+.global-tbl-height .react-bootstrap-table table > thead > tr > th:nth-child(2),
+.global-tbl-height .react-bootstrap-table tbody th:nth-child(2),
+.freeze-milestone-tbl .react-bootstrap-table table > thead > tr > th:nth-child(1),
+.freeze-milestone-tbl .react-bootstrap-table .table.table.table-bordered tbody th:nth-child(1),
+.freeze-milestone-tbl .react-bootstrap-table table > thead > tr > th:nth-child(2),
+.freeze-milestone-tbl .react-bootstrap-table .table.table.table-bordered tbody th:nth-child(2),
+.freeze-milestone-tbl .react-bootstrap-table table > thead > tr > th:nth-child(3),
+.freeze-milestone-tbl .react-bootstrap-table .table.table.table-bordered tbody th:nth-child(3) {
+    z-index: 3 !important;
+}
+.global-tbl-height .react-bootstrap-table table > tbody > tr > td:nth-child(1),
+.global-tbl-height .react-bootstrap-table table > tbody > tr > td:nth-child(2),
+.freeze-milestone-tbl .react-bootstrap-table table > tbody > tr > td:nth-child(1),
+.freeze-milestone-tbl .react-bootstrap-table table > tbody > tr > td:nth-child(2),
+.freeze-milestone-tbl .react-bootstrap-table table > tbody > tr > td:nth-child(3) {
+    z-index: 2 !important;
+}
+
+.table-bordered th:hover, .table-bordered td:hover {
+    white-space: normal;
+    overflow-x: auto;
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid \9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.dropup .caret, .navbar-fixed-bottom .dropdown .caret {
+    border-top: 0;
+    border-bottom: 4px dashed;
+    border-bottom: 4px solid \9;
+    content: "";
+}
+
+@keyframes dot-blink {
+    from {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.bell {
+    cursor: pointer;
+    display: block;
+    width: 0px;
+    height: 0px;
+    font-size: 23px;
+    margin: -4px 3px 11px 7px;
+    padding: 5px 20px 10px 15px;
+    color: #fff;
+}
+
+.bell-ring-on {
+    .bell {
+        cursor: pointer;
+        display: block;
+        width: 0px;
+        height: 0px;
+        font-size: 23px;
+        margin: -4px 3px 11px 7px;
+        padding: 5px 20px 10px 15px;
+        color: #fff;
+        -webkit-animation: ring 4s .7s ease-in-out infinite;
+        -webkit-transform-origin: 50% 4px;
+        -moz-animation: ring 4s .7s ease-in-out infinite;
+        -moz-transform-origin: 50% 4px;
+        animation: ring 4s .7s ease-in-out infinite;
+        transform-origin: 70% 4px;
+    }
+}
+//Odometer start
+.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+    display: inline-block;
+    vertical-align: auto !important;
+    *zoom: 1;
+    top: -0.5px !important;
+    position: relative;
+    font-family: inherit;
+    line-height: 1.1em;
+}
+
+.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-default .odometer-digit {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    position: relative;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer, .odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    visibility: hidden;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-default .odometer-digit .odometer-digit-inner {
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon, .odometer.odometer-theme-default .odometer-digit .odometer-ribbon {
+    display: block;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner, .odometer.odometer-theme-default .odometer-digit .odometer-ribbon-inner {
+    display: block;
+    -webkit-backface-visibility: hidden;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-value, .odometer.odometer-theme-default .odometer-digit .odometer-value {
+    display: block;
+    -webkit-transform: translateZ(0);
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value, .odometer.odometer-theme-default .odometer-digit .odometer-value.odometer-last-value {
+    position: absolute;
+}
+
+.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-up .odometer-ribbon-inner {
+    -webkit-transition: -webkit-transform 2s;
+    -moz-transition: -moz-transform 2s;
+    //-ms-transition: -ms-transform 2s;
+    -o-transition: -o-transform 2s;
+    transition: transform 2s;
+}
+
+.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-down .odometer-ribbon-inner {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+    -webkit-transition: -webkit-transform 2s;
+    -moz-transition: -moz-transform 2s;
+    //-ms-transition: -ms-transform 2s;
+    -o-transition: -o-transform 2s;
+    transition: transform 2s;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.odometer.odometer-auto-theme .odometer-value, .odometer.odometer-theme-default .odometer-value {
+    text-align: center;
+}
+//Odometer End
+.theme-btn-icon {
+    float: right;
+    cursor: pointer;
+    margin-right: 1.5em !important;
+    top: 20px;
+    position: relative;
+    font-size: 20px;
+    margin-right: 0px;
+    display: inline-block;
+    -moz-animation: spin 2s infinite linear;
+    -o-animation: spin 2s infinite linear;
+    -webkit-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes ring {
+    0% {
+        -webkit-transform: rotateZ(0);
+    }
+
+    1% {
+        -webkit-transform: rotateZ(30deg);
+    }
+
+    3% {
+        -webkit-transform: rotateZ(-28deg);
+    }
+
+    5% {
+        -webkit-transform: rotateZ(34deg);
+    }
+
+    7% {
+        -webkit-transform: rotateZ(-32deg);
+    }
+
+    9% {
+        -webkit-transform: rotateZ(30deg);
+    }
+
+    11% {
+        -webkit-transform: rotateZ(-28deg);
+    }
+
+    13% {
+        -webkit-transform: rotateZ(26deg);
+    }
+
+    15% {
+        -webkit-transform: rotateZ(-24deg);
+    }
+
+    17% {
+        -webkit-transform: rotateZ(22deg);
+    }
+
+    19% {
+        -webkit-transform: rotateZ(-20deg);
+    }
+
+    21% {
+        -webkit-transform: rotateZ(18deg);
+    }
+
+    23% {
+        -webkit-transform: rotateZ(-16deg);
+    }
+
+    25% {
+        -webkit-transform: rotateZ(14deg);
+    }
+
+    27% {
+        -webkit-transform: rotateZ(-12deg);
+    }
+
+    29% {
+        -webkit-transform: rotateZ(10deg);
+    }
+
+    31% {
+        -webkit-transform: rotateZ(-8deg);
+    }
+
+    33% {
+        -webkit-transform: rotateZ(6deg);
+    }
+
+    35% {
+        -webkit-transform: rotateZ(-4deg);
+    }
+
+    37% {
+        -webkit-transform: rotateZ(2deg);
+    }
+
+    39% {
+        -webkit-transform: rotateZ(-1deg);
+    }
+
+    41% {
+        -webkit-transform: rotateZ(1deg);
+    }
+
+    43% {
+        -webkit-transform: rotateZ(0);
+    }
+
+    100% {
+        -webkit-transform: rotateZ(0);
+    }
+}
+
+@-moz-keyframes ring {
+    0% {
+        -moz-transform: rotate(0);
+    }
+
+    1% {
+        -moz-transform: rotate(30deg);
+    }
+
+    3% {
+        -moz-transform: rotate(-28deg);
+    }
+
+    5% {
+        -moz-transform: rotate(34deg);
+    }
+
+    7% {
+        -moz-transform: rotate(-32deg);
+    }
+
+    9% {
+        -moz-transform: rotate(30deg);
+    }
+
+    11% {
+        -moz-transform: rotate(-28deg);
+    }
+
+    13% {
+        -moz-transform: rotate(26deg);
+    }
+
+    15% {
+        -moz-transform: rotate(-24deg);
+    }
+
+    17% {
+        -moz-transform: rotate(22deg);
+    }
+
+    19% {
+        -moz-transform: rotate(-20deg);
+    }
+
+    21% {
+        -moz-transform: rotate(18deg);
+    }
+
+    23% {
+        -moz-transform: rotate(-16deg);
+    }
+
+    25% {
+        -moz-transform: rotate(14deg);
+    }
+
+    27% {
+        -moz-transform: rotate(-12deg);
+    }
+
+    29% {
+        -moz-transform: rotate(10deg);
+    }
+
+    31% {
+        -moz-transform: rotate(-8deg);
+    }
+
+    33% {
+        -moz-transform: rotate(6deg);
+    }
+
+    35% {
+        -moz-transform: rotate(-4deg);
+    }
+
+    37% {
+        -moz-transform: rotate(2deg);
+    }
+
+    39% {
+        -moz-transform: rotate(-1deg);
+    }
+
+    41% {
+        -moz-transform: rotate(1deg);
+    }
+
+    43% {
+        -moz-transform: rotate(0);
+    }
+
+    100% {
+        -moz-transform: rotate(0);
+    }
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0);
+    }
+
+    1% {
+        transform: rotate(30deg);
+    }
+
+    3% {
+        transform: rotate(-28deg);
+    }
+
+    5% {
+        transform: rotate(34deg);
+    }
+
+    7% {
+        transform: rotate(-32deg);
+    }
+
+    9% {
+        transform: rotate(30deg);
+    }
+
+    11% {
+        transform: rotate(-28deg);
+    }
+
+    13% {
+        transform: rotate(26deg);
+    }
+
+    15% {
+        transform: rotate(-24deg);
+    }
+
+    17% {
+        transform: rotate(22deg);
+    }
+
+    19% {
+        transform: rotate(-20deg);
+    }
+
+    21% {
+        transform: rotate(18deg);
+    }
+
+    23% {
+        transform: rotate(-16deg);
+    }
+
+    25% {
+        transform: rotate(14deg);
+    }
+
+    27% {
+        transform: rotate(-12deg);
+    }
+
+    29% {
+        transform: rotate(10deg);
+    }
+
+    31% {
+        transform: rotate(-8deg);
+    }
+
+    33% {
+        transform: rotate(6deg);
+    }
+
+    35% {
+        transform: rotate(-4deg);
+    }
+
+    37% {
+        transform: rotate(2deg);
+    }
+
+    39% {
+        transform: rotate(-1deg);
+    }
+
+    41% {
+        transform: rotate(1deg);
+    }
+
+    43% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}

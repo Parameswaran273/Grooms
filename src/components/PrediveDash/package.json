@@ -1,0 +1,6 @@
+{
+  "name": "PrediveDash",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./PrediveDash.js"
+}
